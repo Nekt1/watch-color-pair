@@ -1,0 +1,10 @@
+.colorResults {
+    flex: 1;
+    margin-block: 0.5rem;
+    display: none;
+    flex-direction: column;
+
+    &.active {
+        display: flex;
+    }
+}

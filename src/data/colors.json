@@ -1,0 +1,1079 @@
+{
+	"dualColor": {
+		"colors": [
+			{
+				"name": "yellow gold",
+				"parts": [
+					{ "L": 82.67, "a": 1.95, "b": 43.25 },
+					{ "L": 60.18, "a": 6.54, "b": 53.79 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "rose gold",
+				"parts": [
+					{ "L": 74.16, "a": 24.14, "b": 27.83 },
+					{ "L": 51.84, "a": 32.39, "b": 33.36 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "gold",
+				"parts": [
+					{ "L": 72.79, "a": 7.7, "b": 30.78 },
+					{ "L": 49.24, "a": 14.4, "b": 40.84 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "light orange",
+				"parts": [
+					{ "L": 72.12, "a": 35.85, "b": 77.78 },
+					{ "L": 43.36, "a": 26.41, "b": 52.67 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "purple",
+				"parts": [
+					{ "L": 59.05, "a": 32.63, "b": -58.82 },
+					{ "L": 29.88, "a": 46.38, "b": -76.46 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "pink",
+				"parts": [
+					{ "L": 61.81, "a": 64.49, "b": 30.47 },
+					{ "L": 41.55, "a": 53.63, "b": 26.19 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "blue",
+				"parts": [
+					{ "L": 68.86, "a": -19.09, "b": -46.87 },
+					{ "L": 36.86, "a": -5.41, "b": -37.67 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "green",
+				"parts": [
+					{ "L": 82.45, "a": -47.48, "b": 73.04 },
+					{ "L": 55.81, "a": -37.38, "b": 57.47 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "white",
+				"parts": [
+					{ "L": 72.57, "a": 0.0, "b": -0.0 },
+					{ "L": 41.96, "a": -0.0, "b": 0.0 }
+				],
+				"year": 2015,
+				"season": "spring"
+			},
+
+			{
+				"name": "antique white",
+				"parts": [
+					{ "L": 75.86, "a": 6.73, "b": 20.19 },
+					{ "L": 40.42, "a": 4.38, "b": 11.25 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "stone",
+				"parts": [
+					{ "L": 64.64, "a": 4.85, "b": 15.65 },
+					{ "L": 40.02, "a": 10.07, "b": 24.81 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "walnut",
+				"parts": [
+					{ "L": 59.39, "a": 12.5, "b": 24.04 },
+					{ "L": 35.55, "a": 21.03, "b": 30.45 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "vintage rose",
+				"parts": [
+					{ "L": 76.79, "a": 26.25, "b": 13.58 },
+					{ "L": 48.24, "a": 45.76, "b": 26.01 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "lavender",
+				"parts": [
+					{ "L": 65.69, "a": 10.61, "b": -2.59 },
+					{ "L": 37.59, "a": 26.29, "b": -6.78 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "midnight blue",
+				"parts": [
+					{ "L": 56.85, "a": 4.56, "b": -34.03 },
+					{ "L": 27.6, "a": 1.21, "b": -16.97 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "light blue",
+				"parts": [
+					{ "L": 74.38, "a": -22.96, "b": -20.1 },
+					{ "L": 53.42, "a": -23.63, "b": -22.17 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "turquoise",
+				"parts": [
+					{ "L": 80.92, "a": -18.8, "b": -2.16 },
+					{ "L": 43.76, "a": -10.63, "b": -1.25 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "orange",
+				"parts": [
+					{ "L": 81.62, "a": 25.0, "b": 15.38 },
+					{ "L": 60.32, "a": 65.7, "b": 57.17 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "red",
+				"parts": [
+					{ "L": 72.34, "a": 44.34, "b": 11.63 },
+					{ "L": 48.12, "a": 72.74, "b": 49.47 }
+				],
+				"year": 2015,
+				"season": "autumn"
+			}
+		]
+	},
+	"singleColor": {
+		"colors": [
+			{
+				"name": "yellow gold",
+				"lab": { "L": 72.01, "a": 12.9, "b": 29.04 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "rose gold",
+				"lab": { "L": 74.16, "a": 24.14, "b": 27.83 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "gold",
+				"lab": { "L": 63.69, "a": 12.67, "b": 31.61 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "light orange",
+				"lab": { "L": 72.12, "a": 35.85, "b": 77.78 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "purple",
+				"lab": { "L": 59.05, "a": 32.63, "b": -58.82 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "pink",
+				"lab": { "L": 61.81, "a": 64.49, "b": 30.47 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "blue",
+				"lab": { "L": 68.86, "a": -19.09, "b": -46.87 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "green",
+				"lab": { "L": 82.45, "a": -47.48, "b": 73.04 },
+				"year": 2015,
+				"season": "spring"
+			},
+			{
+				"name": "white",
+				"lab": { "L": 100, "a": 0, "b": 0 },
+				"year": 2015,
+				"season": "spring"
+			},
+
+			{
+				"name": "antique white",
+				"lab": { "L": 76.02, "a": 7.49, "b": 21.7 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "stone",
+				"lab": { "L": 64.73, "a": 5.23, "b": 16.42 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "walnut",
+				"lab": { "L": 59.48, "a": 12.92, "b": 24.86 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "vintage rose",
+				"lab": { "L": 77.22, "a": 26.49, "b": 14.91 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "lavender",
+				"lab": { "L": 66.06, "a": 10.6, "b": -2.59 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "midnight blue",
+				"lab": { "L": 33.47, "a": 5.01, "b": -24.86 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "light blue",
+				"lab": { "L": 74.6, "a": -23.82, "b": -20.93 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "turquoise",
+				"lab": { "L": 81.12, "a": -19.83, "b": -1.86 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "orange",
+				"lab": { "L": 62.87, "a": 58.4, "b": 69.52 },
+				"year": 2015,
+				"season": "autumn"
+			},
+			{
+				"name": "red",
+				"lab": { "L": 37.49, "a": 51.77, "b": 41.61 },
+				"year": 2015,
+				"season": "autumn"
+			},
+
+			{
+				"name": "light pink",
+				"lab": { "L": 78.34, "a": 25.07, "b": 13.66 },
+				"year": 2016,
+				"season": "spring"
+			},
+			{
+				"name": "royal blue",
+				"lab": { "L": 68.22, "a": -9.78, "b": -40.24 },
+				"year": 2016,
+				"season": "spring"
+			},
+			{
+				"name": "mint",
+				"lab": { "L": 87.7, "a": -31.11, "b": 31.71 },
+				"year": 2016,
+				"season": "spring"
+			},
+			{
+				"name": "yellow",
+				"lab": { "L": 82.58, "a": -1.04, "b": 81.25 },
+				"year": 2016,
+				"season": "spring"
+			},
+			{
+				"name": "apricot",
+				"lab": { "L": 65.49, "a": 51.41, "b": 45.92 },
+				"year": 2016,
+				"season": "spring"
+			},
+
+			{
+				"name": "cocoa",
+				"lab": { "L": 60.03, "a": 5.1, "b": 3.02 },
+				"year": 2016,
+				"season": "autumn"
+			},
+			{
+				"name": "ocean blue",
+				"lab": { "L": 56.89, "a": 4.88, "b": -35.79 },
+				"year": 2016,
+				"season": "autumn"
+			},
+
+			{
+				"name": "pebble",
+				"lab": { "L": 65.92, "a": 3.83, "b": 10.14 },
+				"year": 2017,
+				"season": "spring"
+			},
+			{
+				"name": "camellia",
+				"lab": { "L": 48.96, "a": 53.53, "b": 31.06 },
+				"year": 2017,
+				"season": "spring"
+			},
+			{
+				"name": "azure",
+				"lab": { "L": 62.18, "a": -5.43, "b": -6.17 },
+				"year": 2017,
+				"season": "spring"
+			},
+
+			{
+				"name": "flamingo",
+				"lab": { "L": 63.14, "a": 29.77, "b": 27.39 },
+				"year": 2017,
+				"season": "summer"
+			},
+			{
+				"name": "mist blue",
+				"lab": { "L": 74.06, "a": -4.26, "b": 8.44 },
+				"year": 2017,
+				"season": "summer"
+			},
+			{
+				"name": "pollen",
+				"lab": { "L": 86.64, "a": 7.15, "b": 63.6 },
+				"year": 2017,
+				"season": "summer"
+			},
+
+			{
+				"name": "dark olive",
+				"lab": { "L": 57.78, "a": -2.99, "b": 11.97 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "soft white",
+				"lab": { "L": 84.42, "a": 2.55, "b": 14.06 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "rose red",
+				"lab": { "L": 42.42, "a": 57.8, "b": 21.21 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "electric pink",
+				"lab": { "L": 60.15, "a": 67.94, "b": 39.51 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "pink sand",
+				"lab": { "L": 83.56, "a": 20.66, "b": 21.48 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "ultra violet",
+				"lab": { "L": 43.7, "a": 29.89, "b": -51.69 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "blue cobalt",
+				"lab": { "L": 49.75, "a": -16.74, "b": -25.09 },
+				"year": 2017,
+				"season": "autumn"
+			},
+			{
+				"name": "flash",
+				"lab": { "L": 92.04, "a": -22.14, "b": 84.64 },
+				"year": 2017,
+				"season": "autumn"
+			},
+
+			{
+				"name": "dark teal",
+				"lab": { "L": 45.55, "a": 13.25, "b": -23.8 },
+				"year": 2017,
+				"season": "winter"
+			},
+
+			{
+				"name": "denim blue",
+				"lab": { "L": 52.98, "a": -6.44, "b": -24.59 },
+				"year": 2018,
+				"season": "spring"
+			},
+			{
+				"name": "flash light",
+				"lab": { "L": 91.95, "a": -10.21, "b": 89.54 },
+				"year": 2018,
+				"season": "spring"
+			},
+			{
+				"name": "peach",
+				"lab": { "L": 64.13, "a": 38.74, "b": 35.87 },
+				"year": 2018,
+				"season": "spring"
+			},
+
+			{
+				"name": "lavender grey",
+				"lab": { "L": 56.77, "a": 5.15, "b": -16.86 },
+				"year": 2018,
+				"season": "autumn"
+			},
+			{
+				"name": "indigo",
+				"lab": { "L": 43.38, "a": 9.11, "b": -36.78 },
+				"year": 2018,
+				"season": "autumn"
+			},
+			{
+				"name": "blue horizon",
+				"lab": { "L": 41.34, "a": -5.8, "b": -37.81 },
+				"year": 2018,
+				"season": "autumn"
+			},
+			{
+				"name": "storm grey",
+				"lab": { "L": 59.09, "a": -17.27, "b": -5.2 },
+				"year": 2018,
+				"season": "autumn"
+			},
+
+			{
+				"name": "hibiscus",
+				"lab": { "L": 55.38, "a": 79.22, "b": 29.44 },
+				"year": 2018,
+				"season": "winter"
+			},
+			{
+				"name": "pacific green",
+				"lab": { "L": 48.64, "a": -21.61, "b": -25.73 },
+				"year": 2018,
+				"season": "winter"
+			},
+			{
+				"name": "mellow yellow",
+				"lab": { "L": 95.31, "a": -5.78, "b": 28.59 },
+				"year": 2018,
+				"season": "winter"
+			},
+
+			{
+				"name": "delft blue",
+				"lab": { "L": 50.11, "a": 4.85, "b": -42.32 },
+				"year": 2019,
+				"season": "spring"
+			},
+			{
+				"name": "lilac",
+				"lab": { "L": 70.69, "a": 15.87, "b": -28.72 },
+				"year": 2019,
+				"season": "spring"
+			},
+			{
+				"name": "cerulean",
+				"lab": { "L": 77.16, "a": -10.07, "b": -22.98 },
+				"year": 2019,
+				"season": "spring"
+			},
+			{
+				"name": "spearmint",
+				"lab": { "L": 84.38, "a": -45.14, "b": 35.64 },
+				"year": 2019,
+				"season": "spring"
+			},
+			{
+				"name": "papaya",
+				"lab": { "L": 68.93, "a": 44.5, "b": 56.3 },
+				"year": 2019,
+				"season": "spring"
+			},
+
+			{
+				"name": "dragon fruit",
+				"lab": { "L": 58.18, "a": 67.94, "b": 10.55 },
+				"year": 2019,
+				"season": "summer"
+			},
+			{
+				"name": "canary yellow",
+				"lab": { "L": 89.37, "a": 0.92, "b": 75.15 },
+				"year": 2019,
+				"season": "summer"
+			},
+
+			{
+				"name": "camel",
+				"lab": { "L": 62.58, "a": 11.08, "b": 31.74 },
+				"year": 2019,
+				"season": "autumn"
+			},
+			{
+				"name": "pine green",
+				"lab": { "L": 49.41, "a": -15.62, "b": 9.21 },
+				"year": 2019,
+				"season": "autumn"
+			},
+			{
+				"name": "lemon cream",
+				"lab": { "L": 93.14, "a": -3.06, "b": 55.92 },
+				"year": 2019,
+				"season": "autumn"
+			},
+			{
+				"name": "clementine",
+				"lab": { "L": 63.88, "a": 57.35, "b": 48.38 },
+				"year": 2019,
+				"season": "autumn"
+			},
+
+			{
+				"name": "khaki",
+				"lab": { "L": 53.32, "a": -0.09, "b": 23.15 },
+				"year": 2019,
+				"season": "winter"
+			},
+			{
+				"name": "pomegranate",
+				"lab": { "L": 50.56, "a": 70.01, "b": 18.21 },
+				"year": 2019,
+				"season": "winter"
+			},
+			{
+				"name": "beryl",
+				"lab": { "L": 92.03, "a": -16.48, "b": 22.47 },
+				"year": 2019,
+				"season": "winter"
+			},
+
+			{
+				"name": "neon pink",
+				"lab": { "L": 57.49, "a": 73.69, "b": 49.68 },
+				"year": 2020,
+				"season": "spring"
+			},
+			{
+				"name": "grapefruit",
+				"lab": { "L": 79.1, "a": 26.23, "b": 31.52 },
+				"year": 2020,
+				"season": "spring"
+			},
+			{
+				"name": "surf blue",
+				"lab": { "L": 51.69, "a": -16.0, "b": -35.53 },
+				"year": 2020,
+				"season": "spring"
+			},
+			{
+				"name": "cactus",
+				"lab": { "L": 54.83, "a": -13.06, "b": 1.17 },
+				"year": 2020,
+				"season": "spring"
+			},
+
+			{
+				"name": "coastal grey",
+				"lab": { "L": 48.16, "a": 6.32, "b": 11.62 },
+				"year": 2020,
+				"season": "summer"
+			},
+			{
+				"name": "linen blue",
+				"lab": { "L": 44.3, "a": 0.7, "b": -25.75 },
+				"year": 2020,
+				"season": "summer"
+			},
+			{
+				"name": "sea foam",
+				"lab": { "L": 92.87, "a": -13.03, "b": 6.99 },
+				"year": 2020,
+				"season": "summer"
+			},
+
+			{
+				"name": "plum",
+				"lab": { "L": 39.23, "a": 35.03, "b": 11.52 },
+				"year": 2020,
+				"season": "autumn"
+			},
+			{
+				"name": "cyprus green",
+				"lab": { "L": 44.72, "a": -7.77, "b": 10.44 },
+				"year": 2020,
+				"season": "autumn"
+			},
+			{
+				"name": "cream",
+				"lab": { "L": 91.48, "a": 5.57, "b": 25.6 },
+				"year": 2020,
+				"season": "autumn"
+			},
+			{
+				"name": "kumquat",
+				"lab": { "L": 69.3, "a": 43.29, "b": 50.89 },
+				"year": 2020,
+				"season": "autumn"
+			},
+			{
+				"name": "northern blue",
+				"lab": { "L": 61.02, "a": -14.58, "b": -5.73 },
+				"year": 2020,
+				"season": "autumn"
+			},
+			{
+				"name": "deep navy",
+				"lab": { "L": 47.3, "a": -0.6, "b": -23.92 },
+				"year": 2020,
+				"season": "autumn"
+			},
+			{
+				"name": "pink citrus",
+				"lab": { "L": 57.11, "a": 62.5, "b": 40.55 },
+				"year": 2020,
+				"season": "autumn"
+			},
+
+			{
+				"name": "mallard green",
+				"lab": { "L": 45.8, "a": -12.66, "b": -7.18 },
+				"year": 2021,
+				"season": "spring"
+			},
+			{
+				"name": "sea salt",
+				"lab": { "L": 95.07, "a": -0.9, "b": 13.14 },
+				"year": 2021,
+				"season": "spring"
+			},
+			{
+				"name": "abyss",
+				"lab": { "L": 36.83, "a": 3.22, "b": -32.44 },
+				"year": 2021,
+				"season": "spring"
+			},
+			{
+				"name": "pistachio",
+				"lab": { "L": 85.22, "a": -17.49, "b": 26.26 },
+				"year": 2021,
+				"season": "spring"
+			},
+			{
+				"name": "sunflower",
+				"lab": { "L": 74.66, "a": 29.92, "b": 79.12 },
+				"year": 2021,
+				"season": "spring"
+			},
+
+			{
+				"name": "olive",
+				"lab": { "L": 41.37, "a": 2.68, "b": 20.4 },
+				"year": 2021,
+				"season": "summer"
+			},
+			{
+				"name": "cloud blue",
+				"lab": { "L": 88.85, "a": -1.79, "b": 1.18 },
+				"year": 2021,
+				"season": "summer"
+			},
+			{
+				"name": "electric orange",
+				"lab": { "L": 59.42, "a": 67.72, "b": 53.06 },
+				"year": 2021,
+				"season": "summer"
+			},
+
+			{
+				"name": "abyss blue",
+				"lab": { "L": 47.13, "a": -11.3, "b": -16.66 },
+				"year": 2021,
+				"season": "autumn"
+			},
+			{
+				"name": "red",
+				"lab": { "L": 40.76, "a": 63.15, "b": 33.68 },
+				"year": 2021,
+				"season": "autumn"
+			},
+			{
+				"name": "starlight",
+				"lab": { "L": 81.66, "a": 8.39, "b": 21.11 },
+				"year": 2021,
+				"season": "autumn"
+			},
+			{
+				"name": "clover",
+				"lab": { "L": 51.36, "a": -24.17, "b": 27.35 },
+				"year": 2021,
+				"season": "autumn"
+			},
+			{
+				"name": "dark cherry",
+				"lab": { "L": 41.9, "a": 20.51, "b": -2.43 },
+				"year": 2021,
+				"season": "autumn"
+			},
+			{
+				"name": "english lavender",
+				"lab": { "L": 47.52, "a": 6.35, "b": -17.06 },
+				"year": 2021,
+				"season": "autumn"
+			},
+
+			{
+				"name": "flamingo",
+				"lab": { "L": 65.17, "a": 59.54, "b": 12.83 },
+				"year": 2022,
+				"season": "spring"
+			},
+			{
+				"name": "nectarine",
+				"lab": { "L": 61.65, "a": 62.97, "b": 45.81 },
+				"year": 2022,
+				"season": "spring"
+			},
+			{
+				"name": "eucalyptus",
+				"lab": { "L": 56.16, "a": -17.32, "b": 14.87 },
+				"year": 2022,
+				"season": "spring"
+			},
+			{
+				"name": "bright green",
+				"lab": { "L": 75.56, "a": -51.35, "b": 40.36 },
+				"year": 2022,
+				"season": "spring"
+			},
+			{
+				"name": "blue fog",
+				"lab": { "L": 70.29, "a": -7.8, "b": -15.97 },
+				"year": 2022,
+				"season": "spring"
+			},
+
+			{
+				"name": "sunglow",
+				"lab": { "L": 81.73, "a": 16.43, "b": 62.57 },
+				"year": 2022,
+				"season": "autumn"
+			},
+			{
+				"name": "storm blue",
+				"lab": { "L": 46.43, "a": -1.38, "b": -17.05 },
+				"year": 2022,
+				"season": "autumn"
+			},
+			{
+				"name": "slate blue",
+				"lab": { "L": 47.13, "a": -2.34, "b": -10.07 },
+				"year": 2022,
+				"season": "autumn"
+			},
+			{
+				"name": "elderberry",
+				"lab": { "L": 48.39, "a": 16.96, "b": -1.1 },
+				"year": 2022,
+				"season": "autumn"
+			},
+			{
+				"name": "succulent",
+				"lab": { "L": 65.99, "a": -5.82, "b": 8.18 },
+				"year": 2022,
+				"season": "autumn"
+			},
+			{
+				"name": "red",
+				"lab": { "L": 50.07, "a": 71.67, "b": 38.95 },
+				"year": 2022,
+				"season": "autumn"
+			},
+
+			{
+				"name": "spring green",
+				"lab": { "L": 89.71, "a": -29.81, "b": 50.9 },
+				"year": 2023,
+				"season": "spring"
+			},
+			{
+				"name": "purple fog",
+				"lab": { "L": 72.24, "a": 6.05, "b": -3.49 },
+				"year": 2023,
+				"season": "spring"
+			},
+			{
+				"name": "sky",
+				"lab": { "L": 91.32, "a": -7.18, "b": -8.15 },
+				"year": 2023,
+				"season": "spring"
+			},
+
+			{
+				"name": "alaskan blue",
+				"lab": { "L": 46.2, "a": -0.63, "b": -13.53 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "taupe",
+				"lab": { "L": 41.52, "a": 11.45, "b": 14.61 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "guava",
+				"lab": { "L": 60.57, "a": 67.37, "b": 34.67 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "cypress",
+				"lab": { "L": 51.24, "a": -9.43, "b": 18.25 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "orange sorbet",
+				"lab": { "L": 71.56, "a": 39.59, "b": 47.14 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "winter blue",
+				"lab": { "L": 49.36, "a": -5.23, "b": -14.8 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "mulberry",
+				"lab": { "L": 34.53, "a": 30.97, "b": 5.76 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "clay",
+				"lab": { "L": 46.99, "a": 4.48, "b": 12.37 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "red",
+				"lab": { "L": 41.22, "a": 61.77, "b": 33.59 },
+				"year": 2023,
+				"season": "autumn"
+			},
+			{
+				"name": "light pink",
+				"lab": { "L": 86.47, "a": 16.03, "b": 17.71 },
+				"year": 2023,
+				"season": "autumn"
+			},
+
+			{
+				"name": "raspberry",
+				"lab": { "L": 44.05, "a": 62.45, "b": 18.34 },
+				"year": 2024,
+				"season": "spring"
+			},
+			{
+				"name": "pink",
+				"lab": { "L": 64.64, "a": 58.84, "b": 23.62 },
+				"year": 2024,
+				"season": "spring"
+			},
+			{
+				"name": "ocean blue",
+				"lab": { "L": 37.84, "a": -3.18, "b": -24.25 },
+				"year": 2024,
+				"season": "spring"
+			},
+			{
+				"name": "soft mint",
+				"lab": { "L": 93.74, "a": -6.49, "b": 20.18 },
+				"year": 2024,
+				"season": "spring"
+			},
+			{
+				"name": "sunshine",
+				"lab": { "L": 80.05, "a": 18.57, "b": 72.35 },
+				"year": 2024,
+				"season": "spring"
+			},
+			{
+				"name": "light blue",
+				"lab": { "L": 68.49, "a": -3.8, "b": -6.2 },
+				"year": 2024,
+				"season": "spring"
+			},
+
+			{
+				"name": "dark taupe",
+				"lab": { "L": 44.48, "a": 9.93, "b": 15.23 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "blue cloud",
+				"lab": { "L": 79.63, "a": 2.59, "b": -2.15 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "ink",
+				"lab": { "L": 43.57, "a": -1.56, "b": -16.63 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "magenta",
+				"lab": { "L": 41.66, "a": 60.3, "b": -5.36 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "chartreuse",
+				"lab": { "L": 61.96, "a": 5.75, "b": 60.8 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "ultramarine",
+				"lab": { "L": 28.91, "a": 15.01, "b": -40.49 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "star fruit",
+				"lab": { "L": 89.02, "a": 0.95, "b": 75.22 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "light blush",
+				"lab": { "L": 91.32, "a": 8.66, "b": 15.4 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "denim",
+				"lab": { "L": 43.86, "a": 0.03, "b": -16.77 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "plum",
+				"lab": { "L": 39.25, "a": 26.29, "b": -7.41 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "lake green",
+				"lab": { "L": 51.69, "a": -18.14, "b": -0.82 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "slate",
+				"lab": { "L": 62.23, "a": 4.43, "b": 7.89 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "gold",
+				"lab": { "L": 72.92, "a": 15.28, "b": 34.36 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "natural",
+				"lab": { "L": 65.24, "a": 5.97, "b": 15.38 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "rose gold",
+				"lab": { "L": 84.66, "a": 17.38, "b": 25.0 },
+				"year": 2024,
+				"season": "autumn"
+			},
+			{
+				"name": "silver",
+				"lab": { "L": 95.81, "a": 3.07, "b": 10.95 },
+				"year": 2024,
+				"season": "autumn"
+			},
+
+			{
+				"name": "sage",
+				"lab": { "L": 56.2, "a": -9.78, "b": 10.55 },
+				"year": 2025,
+				"season": "spring"
+			},
+			{
+				"name": "northern lights",
+				"lab": { "L": 97.08, "a": -18.41, "b": 60.32 },
+				"year": 2025,
+				"season": "spring"
+			},
+			{
+				"name": "periwinkle",
+				"lab": { "L": 58.47, "a": 8.86, "b": -35.52 },
+				"year": 2025,
+				"season": "spring"
+			},
+			{
+				"name": "aquamarine",
+				"lab": { "L": 96.17, "a": -10.19, "b": 13.02 },
+				"year": 2025,
+				"season": "spring"
+			},
+			{
+				"name": "tangerine",
+				"lab": { "L": 64.73, "a": 55.72, "b": 42.24 },
+				"year": 2025,
+				"season": "spring"
+			},
+			{
+				"name": "peony",
+				"lab": { "L": 66.11, "a": 59.4, "b": 2.92 },
+				"year": 2025,
+				"season": "spring"
+			}
+		]
+	}
+}

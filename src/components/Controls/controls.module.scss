@@ -1,0 +1,35 @@
+.controls {
+    background-color: #336699;
+    height: auto;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #92374D;
+    padding: 0.5rem;
+    transition: height 0.5s ease-in-out;
+
+    .buttonContainer {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto;
+        gap: 0.5rem;
+        border: 1px solid #92374D;
+        padding: 0.5rem;
+    }
+
+    &.found {
+        height: 100%;
+    }
+}
+
+
+@container (max-width: 1000px) {
+    .controls {
+        width: 100%;
+        margin-left: 0;
+    }
+}

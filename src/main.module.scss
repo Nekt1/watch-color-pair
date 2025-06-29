@@ -1,0 +1,44 @@
+.mainContainer {
+    container-type: inline-size;
+}
+
+.containerOuter {
+    background-color: #2F4858;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerInner {
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #FAF3DD;
+    width: 100%;
+    margin: 0 20px; 
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+}
+
+@container (max-width: 1000px) {
+
+    .containerOuter {
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .containerInner {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+        gap: 10px;
+        width: 100%;
+        margin-inline: 0;
+        padding-block: 3rem;
+    }
+    
+}
