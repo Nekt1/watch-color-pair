@@ -1,5 +1,4 @@
-import type { ButtonProps } from "../../../types";
-import Button from "../../Button/Button";
+import Button, { type ButtonProps } from "../../Button/Button";
 import styles from "./resetBtn.module.scss";
 
 export default function ResetBtn({

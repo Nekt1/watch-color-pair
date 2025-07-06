@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import styles from "./main.module.scss";
-import "./reset.css";
+import "./reset.scss";
 import type { Color, DualColor, LabValue } from "./types.ts";
 import Controls from "./components/Controls/Controls.tsx";
 import UploadContainer from "./components/UploadContainer/UploadContainer.tsx";
@@ -10,21 +10,14 @@ import {
 	singleColorFilter,
 } from "./utils/colorFilters.ts";
 import type { ImageCanvasRef } from "./components/UploadContainer/ImageCanvas/ImageCanvas.tsx";
+import { getComplementaryColor } from "./utils/colorConversions.ts";
 
-// main TODO
-// add the remaining dual colors (pain)
-// work on accessibility
-// add watch face selection instead of just single / dual color mode? (cuz thanks appel for this system)
-// add an option to take a photo from mobile instead of uploading a file - seems like it works out of the box, need to check androidos
-// change color palette (ugh)
-// add an option for color select without needing to upload something
-// add complementary colors? can just convert to hsl and then flip it
-// some weird twitching when the colorHeader is first loaded? need to investigate
-// check localStorage saving the mode (so it doesn't always refresh to single)
-// toggle button - adjust size and check on mobile, not smoothy smooth
-// check font sizes / weights - inconsistent
-// disabling zoom on mobile - check for a better solution, not this cringe
-// hover state gets stuck on buttons on mobile - need to investigate & fix
+// remaining TODOs
+// add the remaining dual colors in data
+// improve accessibility (toggle selectors, aria stuff, etc)
+// implement localStorage saving the state
+// add watch face types? will need to adjust data and map to corresponding watch types, but will be more useful instead of just dual / single modes
+// reset matches on change to complementary mode, need to adjust checkMatch parameters 
 
 function App() {
 	const [color, setColor] = useState<LabValue | null>(null);
@@ -33,29 +26,41 @@ function App() {
 	);
 	const [imageLoaded, setImageLoaded] = useState<boolean>(false);
 	const [singleColorMode, setSingleColorMode] = useState<boolean>(true);
+	const [isComplementaryMode, setIsComplementaryMode] =
+		useState<boolean>(false);
+	const [isManualMode, setIsManualMode] = useState<boolean>(false);
 	const canvasRef = useRef<ImageCanvasRef>(null);
 
-	function checkMatch(updatedMode?: boolean) {
+	// need to split, does too much
+	function checkMatch(updatedColorMode?: boolean) {
 		if (!color) return;
-		const modeValue = updatedMode !== undefined ? updatedMode : singleColorMode;
+		const targetColor = isComplementaryMode
+			? getComplementaryColor(color)
+			: color;
+		const modeValue =
+			updatedColorMode !== undefined ? updatedColorMode : singleColorMode;
 		let deltas: Color[] | DualColor[];
 		if (modeValue) {
-			deltas = singleColorFilter(color);
+			deltas = singleColorFilter(targetColor);
 		} else {
-			deltas = dualColorFilter(color);
+			deltas = dualColorFilter(targetColor);
 		}
 		deltas.sort(deltaFilter);
 		const bestMatches = deltas.slice(0, 5);
 		setTopMatches(bestMatches);
 	}
 
-	function resetPicture() {
+	function clearCanvas() {
 		if (!canvasRef.current) return;
+		canvasRef.current.clearCanvas();
+		canvasRef.current.resetImage();
+	}
+
+	function resetMatches() {
 		setImageLoaded(false);
 		setTopMatches(null);
 		setColor(null);
-		canvasRef.current.clearCanvas();
-		canvasRef.current.resetImage();
+		clearCanvas();
 	}
 
 	function changeMode() {
@@ -64,6 +69,20 @@ function App() {
 		if (topMatches) {
 			checkMatch(newMode);
 		}
+	}
+
+	function setManualColor(lab: LabValue) {
+		setColor(lab);
+	}
+
+	function setManualMode() {
+		setIsManualMode(!isManualMode);
+		resetMatches();
+	}
+
+	function setComplementaryMode() {
+		setIsComplementaryMode(!isComplementaryMode);
+		resetMatches();
 	}
 
 	return (
@@ -75,15 +94,21 @@ function App() {
 						setImageLoaded={setImageLoaded}
 						setColor={setColor}
 						ref={canvasRef}
+						isManualMode={isManualMode}
+						setManualColor={setManualColor}
 					/>
 					<Controls
 						topMatches={topMatches}
-						resetPicture={resetPicture}
+						resetMatches={resetMatches}
 						imageLoaded={imageLoaded}
 						checkMatch={() => checkMatch()}
 						color={color}
 						colorMode={singleColorMode}
 						changeMode={changeMode}
+						setIsManualMode={setManualMode}
+						isManualMode={isManualMode}
+						setIsComplementaryMode={setComplementaryMode}
+						isComplementaryMode={isComplementaryMode}
 					/>
 				</div>
 			</div>

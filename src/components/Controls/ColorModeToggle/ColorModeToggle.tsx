@@ -1,3 +1,4 @@
+import Toggle from "../../Toggle/Toggle";
 import styles from "./colorModeToggle.module.scss";
 
 interface ColorModeToggleProps {
@@ -10,22 +11,15 @@ export default function ColorModeToggle({
 	changeMode,
 }: ColorModeToggleProps) {
 	return (
-		<div className={styles.modeToggleContainer}>
+		<div className={styles.colorModeToggleContainer}>
 			<p>Color Match</p>
-			<div className={styles.buttons}>
-				<p className={styles.singleModeHeader}>single</p>
-				<label htmlFor="colorModeToggle">
-					<input
-						type="checkbox"
-						name="colorModeToggle"
-						id="colorModeToggle"
-						checked={!colorMode}
-						onChange={changeMode}
-					/>
-					<span className={styles.toggleSlider}></span>
-				</label>
-				<p className={styles.dualModeHeader}>dual</p>
-			</div>
+			<Toggle
+				isDisabled={colorMode}
+				handleChange={changeMode}
+				name={"colorModeToggle"}
+				firstLabel={"single"}
+				secondLabel="dual"
+			/>
 		</div>
 	);
 }

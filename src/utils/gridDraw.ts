@@ -25,8 +25,6 @@ export function drawGrid(ctx: CanvasRenderingContext2D) {
 	}
 }
 
-// TODO
-// add proper background color fill style when decided on the palette
 export function drawZoomedGrid(
 	posX: number,
 	posY: number,
@@ -34,7 +32,7 @@ export function drawZoomedGrid(
 	initialCanvas: HTMLCanvasElement,
 ) {
 	zoomCanvasCtx.clearRect(0, 0, ZOOM_CANVAS_SIZE, ZOOM_CANVAS_SIZE);
-	zoomCanvasCtx.fillStyle = "white";
+	zoomCanvasCtx.fillStyle = "#CABFAC";
 	zoomCanvasCtx.fillRect(0, 0, ZOOM_CANVAS_SIZE, ZOOM_CANVAS_SIZE);
 	zoomCanvasCtx.drawImage(
 		initialCanvas,

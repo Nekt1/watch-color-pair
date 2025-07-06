@@ -1,11 +1,11 @@
+@use '../../../styles/variables' as *;
+
 .resetButtonContainer {
-    grid-column: 1;
-    grid-row: 1;
     display: flex;
     justify-content: center;
 
     button {
-        background-color: #92374D;
+        background-color: $btn-color;
     }
 
 }

@@ -1,9 +1,11 @@
+@use './styles/variables' as *;
+
 .mainContainer {
     container-type: inline-size;
 }
 
 .containerOuter {
-    background-color: #2F4858;
+    background-color: $bg-color;
     height: 100dvh;
     width: 100%;
     display: flex;
@@ -14,7 +16,7 @@
 .containerInner {
     border-radius: 5px;
     padding: 1rem;
-    background-color: #FAF3DD;
+    background-color: $menu-color;
     width: 100%;
     margin: 0 20px; 
     max-width: 1200px;

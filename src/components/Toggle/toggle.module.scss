@@ -1,0 +1,55 @@
+@use '../../styles/variables' as *;
+
+.toggleButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    p {
+        flex: 1;
+    }
+
+    .firstHeader {
+        text-align: right;
+    }
+
+    .secondHeader {
+        text-align: left;
+    }
+
+    .toggleBackground {
+        --toggleHeight: 35px;
+        --borderWidth: 1px;
+        cursor: pointer;
+        height: var(--toggleHeight);
+        width: calc(var(--toggleHeight) * 2);
+        background-color: $container-color;
+        border-radius: var(--toggleHeight);
+        position: relative;
+        border: var(--borderWidth) solid $border-color;
+
+        .toggleSlider {
+            will-change: transform;
+            position: absolute;
+            width: calc(var(--toggleHeight) * 0.85);
+            height: calc(var(--toggleHeight) * 0.85);
+            background-color: $btn-color;
+            border-radius: 50%;
+            top: calc(var(--toggleHeight) * 0.05 - 1px);
+            left: calc(var(--toggleHeight) * 0.1 - 1px);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }  
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked {
+            + .toggleSlider {
+                transform: translateX(calc(var(--toggleHeight) - 1px));
+            }
+        }
+    }
+}

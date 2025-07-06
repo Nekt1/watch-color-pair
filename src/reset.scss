@@ -1,3 +1,5 @@
+@use './styles/variables' as *;
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -14,8 +16,11 @@
 html,
 body,
 #root {
+	background-color: $bg-color;
+}
+
+html {
 	height: 100%;
-	background-color: #2f4858;
 }
 
 /* 3. Enable keyword animations */
@@ -26,6 +31,7 @@ body,
 }
 
 body {
+	min-height: 100vh;
 	/* 4. Add accessible line-height */
 	line-height: 1.5;
 	/* 5. Improve text rendering */

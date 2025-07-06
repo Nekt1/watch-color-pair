@@ -1,12 +1,17 @@
 import clsx from "clsx";
 import styles from "./button.module.scss";
-import type { ButtonProps } from "../../types";
+
+export interface ButtonProps {
+	onClick: () => void;
+	isDisabled: boolean;
+	children: React.ReactNode;
+}
 
 export default function Button({ onClick, isDisabled, children }: ButtonProps) {
 	return (
 		<button
-			className={clsx(styles.defaultButton, {
-				[styles.disabled]: !isDisabled,
+			className={clsx(styles.btn, {
+				[styles.disabled]: isDisabled,
 			})}
 			onClick={onClick}
 		>

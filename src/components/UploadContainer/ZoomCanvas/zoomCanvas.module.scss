@@ -1,0 +1,10 @@
+@use '../../../styles/variables' as *;
+
+.zoomCanvas {
+    position: absolute;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: $container-color;
+    z-index: 2;
+}

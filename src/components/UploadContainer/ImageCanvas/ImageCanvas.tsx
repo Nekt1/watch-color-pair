@@ -2,34 +2,33 @@ import clsx from "clsx";
 import styles from "./imageCanvas.module.scss";
 import { useEffect, useImperativeHandle, useRef, useState } from "react";
 import { drawZoomedGrid, fillCanvas } from "../../../utils/gridDraw";
-import { loadImage } from "../../../utils/fileLoad";
-import { ZOOM_CANVAS_OFFSET, ZOOM_CANVAS_SIZE } from "../../../constants";
+import { ZOOM_CANVAS_OFFSET } from "../../../constants";
 import { rgbToLab } from "../../../utils/colorConversions";
 import { getCoords } from "../../../utils/getCoords";
 import React from "react";
 import type { Image, LabValue } from "../../../types";
-import FileUploader from "../FileUploader/FileUploader";
-
+import ZoomCanvas from "../ZoomCanvas/ZoomCanvas";
+import { isMobile } from "react-device-detect";
 export interface ImageCanvasRef {
 	clearCanvas: () => void;
 	resetImage: () => void;
 }
-
 interface ImageCanvasProps {
 	setImageLoaded: (arg: boolean) => void;
 	imageLoaded: boolean;
 	setColor: (arg: LabValue) => void;
+	image: HTMLImageElement | null;
+	setImage: (arg: HTMLImageElement | null) => void;
 }
 
 export const ImageCanvas = React.forwardRef<
 	ImageCanvasRef | null,
 	ImageCanvasProps
->(({ setImageLoaded, imageLoaded, setColor }, ref) => {
+>(({ imageLoaded, setColor, image, setImage }, ref) => {
 	const canvasContainerRef = useRef<HTMLDivElement>(null);
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const ctxRef = useRef<CanvasRenderingContext2D>(null);
 	const zoomCanvasRef = useRef<HTMLCanvasElement>(null);
-	const [image, setImage] = useState<HTMLImageElement | null>(null);
 	const [imageProperties, setImageProperties] = useState<Image>({
 		x: 0,
 		y: 0,
@@ -95,11 +94,6 @@ export const ImageCanvas = React.forwardRef<
 		};
 	}, [image]);
 
-	// function handleZoomEnter() {
-	//     if (!imageLoaded) return;
-	//     setToggleZoom(true)
-	// }
-
 	function handleZoomLeave() {
 		setToggleZoom(false);
 	}
@@ -146,51 +140,23 @@ export const ImageCanvas = React.forwardRef<
 		}
 	}
 
-	async function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
-		// TODO add a file size check
-		if (!e.target.files || !ctxRef.current || !canvasRef.current) return;
-		const file: File = e.target.files[0];
-		const img = await loadImage(file);
-		setImage(img);
-
-		const ctx = ctxRef.current;
-		const canvasHeight = canvasRef.current.height;
-		const canvasWidth = canvasRef.current.width;
-
-		const imgPosition = fillCanvas(ctx, canvasHeight, canvasWidth, img);
-		setImageLoaded(true);
-		setImageProperties({
-			x: imgPosition.x,
-			y: imgPosition.y,
-			width: img.width,
-			height: img.height,
-		});
-	}
-
 	return (
 		<div ref={canvasContainerRef} className={styles.uploadContainer}>
 			<canvas
-				className={clsx(styles.canvas, {
+				className={clsx(styles.mainCanvas, {
 					[styles.canvasPlaceholder]: !imageLoaded,
 				})}
 				ref={canvasRef}
 				onClick={handleClick}
 				onMouseMove={handleMove}
-				// onMouseEnter={handleZoomEnter}
 				onMouseLeave={handleZoomLeave}
 			></canvas>
-			<FileUploader
-				imageLoaded={imageLoaded}
-				handleFileChange={handleFileChange}
-			/>
-			{toggleZoom && (
-				<canvas
-					className={styles.zoom}
-					style={{ left: zoomPosition.x, top: zoomPosition.y }}
-					width={ZOOM_CANVAS_SIZE}
-					height={ZOOM_CANVAS_SIZE}
-					ref={zoomCanvasRef}
-				></canvas>
+			{toggleZoom && !isMobile && (
+				<ZoomCanvas
+					toggleZoom={toggleZoom}
+					zoomPosition={zoomPosition}
+					zoomCanvasRef={zoomCanvasRef}
+				/>
 			)}
 		</div>
 	);

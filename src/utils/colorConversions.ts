@@ -1,3 +1,5 @@
+import type { LabValue } from "../types";
+
 // Helper function for gamma correction
 function roundDown(num: number) {
 	return parseFloat(num.toFixed(2));
@@ -9,6 +11,22 @@ function gammaCorrect(value: number) {
 		: value / 12.92;
 }
 
+function hexToRgb(hex: string) {
+	let r = 0,
+		g = 0,
+		b = 0;
+	if (hex.length === 7) {
+		r = parseInt(hex.slice(1, 3), 16);
+		g = parseInt(hex.slice(3, 5), 16);
+		b = parseInt(hex.slice(5, 7), 16);
+	} else if (hex.length === 4) {
+		r = parseInt(hex[1] + hex[1], 16);
+		g = parseInt(hex[2] + hex[2], 16);
+		b = parseInt(hex[3] + hex[3], 16);
+	}
+	return { r, g, b };
+}
+
 // Helper function for XYZ to LAB conversion
 function xyzToLab(value: number) {
 	const epsilon = 216 / 24389; // 0.008856
@@ -17,7 +35,7 @@ function xyzToLab(value: number) {
 }
 
 // Main conversion function
-export function rgbToLab(r: number, g: number, b: number) {
+function rgbToLab(r: number, g: number, b: number) {
 	// Normalize RGB values to the range 0-1
 	r /= 255;
 	g /= 255;
@@ -40,54 +58,77 @@ export function rgbToLab(r: number, g: number, b: number) {
 	return { L, a, b: bLab };
 }
 
-export function labToXyz(L: number, a: number, b: number) {
-	const y = (L + 16) / 116;
-	const x = a / 500 + y;
-	const z = y - b / 200;
+function rgbToHsl(r: number, g: number, b: number) {
+	r /= 255;
+	g /= 255;
+	b /= 255;
 
-	const [x3, y3, z3] = [x ** 3, y ** 3, z ** 3];
-	const epsilon = 0.008856; // actual CIE standard
-	const kappa = 903.3;
+	const max = Math.max(r, g, b);
+	const min = Math.min(r, g, b);
+	const delta = max - min;
 
-	const xr = x3 > epsilon ? x3 : (116 * x - 16) / kappa;
-	const yr = L > kappa * epsilon ? y3 : L / kappa;
-	const zr = z3 > epsilon ? z3 : (116 * z - 16) / kappa;
+	let h = 0;
+	let s = 0;
+	const l = (max + min) / 2;
 
-	// Reference white D65
-	const X = xr * 95.047;
-	const Y = yr * 100.0;
-	const Z = zr * 108.883;
+	if (delta !== 0) {
+		s = delta / (1 - Math.abs(2 * l - 1));
 
-	return { X, Y, Z };
-}
+		switch (max) {
+			case r:
+				h = ((g - b) / delta) % 6;
+				break;
+			case g:
+				h = (b - r) / delta + 2;
+				break;
+			case b:
+				h = (r - g) / delta + 4;
+				break;
+		}
 
-export function xyzToRgb(X: number, Y: number, Z: number) {
-	// Observer= 2°, Illuminant= D65
-	let r = X * 0.032406 + Y * -0.015372 + Z * -0.004986;
-	let g = X * -0.009689 + Y * 0.018758 + Z * 0.000415;
-	let b = X * 0.000557 + Y * -0.00204 + Z * 0.01057;
-
-	// Apply reverse gamma correction
-	const gammaCorrect = (c: number) => {
-		c = c / 100; // scale back
-		return c <= 0.0031308 ? 12.92 * c : 1.055 * Math.pow(c, 1 / 2.4) - 0.055;
-	};
-
-	r = gammaCorrect(r);
-	g = gammaCorrect(g);
-	b = gammaCorrect(b);
-
-	// Clamp to [0, 1] and scale to [0, 255]
-	const clamp = (x: number) => Math.min(Math.max(0, x), 1) * 255;
+		h *= 60;
+		if (h < 0) h += 360;
+	}
 
 	return {
-		r: clamp(r),
-		g: clamp(g),
-		b: clamp(b),
+		h: Math.round(h),
+		s: +(s * 100).toFixed(1),
+		l: +(l * 100).toFixed(1),
 	};
 }
 
-export function labToRgb(l, a, b) {
+function hslToRgb(h: number, s: number, l: number) {
+	s /= 100;
+	l /= 100;
+
+	const c = (1 - Math.abs(2 * l - 1)) * s;
+	const hPrime = h / 60;
+	const x = c * (1 - Math.abs((hPrime % 2) - 1));
+	let r1, g1, b1;
+
+	if (hPrime >= 0 && hPrime < 1) {
+		[r1, g1, b1] = [c, x, 0];
+	} else if (hPrime >= 1 && hPrime < 2) {
+		[r1, g1, b1] = [x, c, 0];
+	} else if (hPrime >= 2 && hPrime < 3) {
+		[r1, g1, b1] = [0, c, x];
+	} else if (hPrime >= 3 && hPrime < 4) {
+		[r1, g1, b1] = [0, x, c];
+	} else if (hPrime >= 4 && hPrime < 5) {
+		[r1, g1, b1] = [x, 0, c];
+	} else {
+		[r1, g1, b1] = [c, 0, x];
+	}
+
+	const m = l - c / 2;
+	const r = Math.round((r1 + m) * 255);
+	const g = Math.round((g1 + m) * 255);
+	const b = Math.round((b1 + m) * 255);
+
+	return { r, g, b };
+}
+
+function labToRgb(l: number, a: number, b: number) {
 	// Step 1: Convert Lab to XYZ
 	const delta = 6 / 29;
 	const fy = (l + 16) / 116;
@@ -124,7 +165,24 @@ export function labToRgb(l, a, b) {
 	};
 }
 
-export function calculateContrast(r: number, g: number, b: number) {
+function calculateContrast(r: number, g: number, b: number) {
 	const yiq = (r * 299 + g * 587 + b * 114) / 1000;
 	return yiq >= 128 ? "black" : "white";
 }
+
+function getComplementaryColor(labColor: LabValue) {
+	const rgbColor = labToRgb(labColor.L, labColor.a, labColor.b);
+	const hslColor = rgbToHsl(rgbColor.r, rgbColor.g, rgbColor.b);
+	const complementaryHue = (hslColor.h + 180) % 360;
+	const convertedRgb = hslToRgb(complementaryHue, hslColor.s, hslColor.l);
+	const convertedLab = rgbToLab(convertedRgb.r, convertedRgb.g, convertedRgb.b);
+	return convertedLab;
+}
+
+export {
+	hexToRgb,
+	rgbToLab,
+	labToRgb,
+	calculateContrast,
+	getComplementaryColor,
+};

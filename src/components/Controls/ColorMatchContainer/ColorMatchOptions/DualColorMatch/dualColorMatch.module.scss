@@ -1,3 +1,6 @@
+// TODO
+// get rid of colorMatchContainer repetition between dual / single colors, can extract common styles
+
 .colorMatchContainer {
     position: relative;
     flex: 1;
@@ -31,7 +34,6 @@
         z-index: 1;
         padding-inline: 0.5rem;
     }
-
 }
 
 .matchText {

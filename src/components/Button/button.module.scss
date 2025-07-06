@@ -1,22 +1,27 @@
+@use '../../styles/variables' as *;
 
-.defaultButton {
-    background-color: white;
+.btn {
     text-align: center;
     font-size: 1rem;
-    border: 1px solid black;
+    border: 1px solid $border-color;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 0.5rem;
     width: 80%;
     border-radius: 5px;
     color: #FAF3DD;
     font-weight: 600;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
 
     &:not(.disabled):hover {
-        opacity: 0.7;
+        background-color: #4c5178;
+    }
+
+    &:not(.disabled):active {
+        transform: translateY(1px);
     }
 }
 
 .disabled {
     cursor: not-allowed;
-    opacity: 0.7;
+    opacity: 0.6;
 }
