@@ -18,6 +18,8 @@ import { getComplementaryColor } from "./utils/colorConversions.ts";
 // implement localStorage saving the state
 // add watch face types? will need to adjust data and map to corresponding watch types, but will be more useful instead of just dual / single modes
 // reset matches on change to complementary mode, need to adjust checkMatch parameters 
+// add a pre-commit hook to run biome validation
+// fix the reset button (shouldn't be able to click on it if it's disabled)
 
 function App() {
 	const [color, setColor] = useState<LabValue | null>(null);
